@@ -17,15 +17,19 @@
   <body>
     <header>
       <nav class="nav-container">
-        <img class="nav-logo" src="../docs/demande-client/00.assets/logo.svg" alt="logo Ocoffee">
-        <h1><a href="./index.html">oCoffee </a></h1>
+        <div class="nav-logo">
+          <img class="nav-logo__pic" src="../docs/demande-client/00.assets/logo.svg" alt="logo Ocoffee">
+          <h1 class="nav-logo__title title"><a href="./index.html">oCoffee </a></h1>
+        </div>
 
-        <ul>
-          <li><a class="nav-item" href="./index.html">Accueil</a></li>
-          <li><a class="nav-item" href="./catalogue.html">Catalogue</a></li>
-          <li><a class="nav-item" href="#">Boutique</a></li>
+        <div class="nav-menu">
+          <ul class="nav-menu__list">
+            <li><a class="nav-menu__item" href="./index.html">Accueil</a></li>
+            <li><a class="nav-menu__item" href="./catalogue.html">Catalogue</a></li>
+            <li><a class="nav-menu__item" href="#">Boutique</a></li>
 
-        </ul>
+          </ul>
+        </div> 
 
       </nav>
 
@@ -34,48 +38,77 @@
     <main>
       <section class="introduction">
         <h2 class="introduction-title title">oCoffee</h2>
-          <p class="introduction-text">Bienvenue dans notre boutique, où règne une ambiance chaleureuse et accueillante qui éveille tous vos sens. Dès que vous franchissez la porte, vous êtes enveloppé d'une douce symphonie d'arômes envoûtants de café fraîchement moulu.
 
-          L'atmosphère est empreinte d'une lueur chaleureuse, avec des lumières tamisées qui créent des jeux d'ombres et de lumières apaisants. Les murs sont ornés d'éléments rustiques, de panneaux en bois et de photographies captivantes de plantations de café, évoquant l'origine de ces délices aromatiques.
-          
-          Les étagères en bois exposent fièrement une variété de grains de café provenant des quatre coins du monde, chacun racontant une histoire unique de terroir et de culture. Les sacs de café empilés dévoilent une palette de couleurs allant des tons chocolat aux nuances ambrées, invitant à l'exploration sensorielle.
-          
-          Le cliquetis des tasses et des cuillères résonne joyeusement dans l'air et le son réconfortant des machines à expresso en action crée une symphonie orchestrée avec soin, soulignant l'expertise et l'art qui se cachent derrière chaque tasse de café servie.
-          
-          Les coins douillets sont parsemés de fauteuils confortables et de canapés moelleux, invitant nos clients à s'installer et à se perdre dans un bon livre, ou simplement à profiter d'une conversation entre amis. L'odeur enivrante du café fraîchement infusé flotte dans l'air, créant une ambiance propice à la détente et à la contemplation.
-          
-          Le personnel attentionné et passionné est toujours prêt à partager ses connaissances et ses recommandations, créant un lien chaleureux entre les amateurs de café et les artisans qui le préparent avec soin. Chaque visite est une expérience personnelle, où le client est accueilli comme un ami de longue date.
-          
-          Dans notre détaillant de café, l'ambiance chaleureuse vous invite à ralentir le rythme trépidant de la vie quotidienne et à savourer l'instant présent. Que vous soyez un connaisseur de café ou un novice curieux, nous sommes là pour vous guider dans un voyage sensoriel inoubliable, où chaque gorgée révèle un monde de saveurs riches et complexes.</p>
-
-          <button class="introduction-button" type="button" href="#">Voir le catalogue</button>
-
+        <div class="introduction-block">
           <img class="introduction-pic" src="../docs/demande-client/00.assets/about.jpg" alt="Illustration de plusieurs tasses de café">
+          
+          <div class="introduction-text">
+            <p class="introduction-text__paragraph__paragraph text">Bienvenue dans notre boutique, où règne une ambiance chaleureuse et accueillante qui éveille tous vos sens. Dès que vous franchissez la porte, vous êtes enveloppé d'une douce symphonie d'arômes envoûtants de café fraîchement moulu.</p>
 
+            <p class="introduction-text__paragraph text">L'atmosphère est empreinte d'une lueur chaleureuse, avec des lumières tamisées qui créent des jeux d'ombres et de lumières apaisants. Les murs sont ornés d'éléments rustiques, de panneaux en bois et de photographies captivantes de plantations de café, évoquant l'origine de ces délices aromatiques.</p>
+            
+            <p class="introduction-text__paragraph text">Les étagères en bois exposent fièrement une variété de grains de café provenant des quatre coins du monde, chacun racontant une histoire unique de terroir et de culture. Les sacs de café empilés dévoilent une palette de couleurs allant des tons chocolat aux nuances ambrées, invitant à l'exploration sensorielle.</p>
+            
+            <p class="introduction-text__paragraph text">Le cliquetis des tasses et des cuillères résonne joyeusement dans l'air et le son réconfortant des machines à expresso en action crée une symphonie orchestrée avec soin, soulignant l'expertise et l'art qui se cachent derrière chaque tasse de café servie.</p>
+            
+            <p class="introduction-text__paragraph text">Les coins douillets sont parsemés de fauteuils confortables et de canapés moelleux, invitant nos clients à s'installer et à se perdre dans un bon livre, ou simplement à profiter d'une conversation entre amis. L'odeur enivrante du café fraîchement infusé flotte dans l'air, créant une ambiance propice à la détente et à la contemplation.</p>
+            
+            <p class="introduction-text__paragraph text">Le personnel attentionné et passionné est toujours prêt à partager ses connaissances et ses recommandations, créant un lien chaleureux entre les amateurs de café et les artisans qui le préparent avec soin. Chaque visite est une expérience personnelle, où le client est accueilli comme un ami de longue date.</p>
+            
+            <p class="introduction-text__paragraph text">Dans notre détaillant de café, l'ambiance chaleureuse vous invite à ralentir le rythme trépidant de la vie quotidienne et à savourer l'instant présent. Que vous soyez un connaisseur de café ou un novice curieux, nous sommes là pour vous guider dans un voyage sensoriel inoubliable, où chaque gorgée révèle un monde de saveurs riches et complexes.</p>
+          </div>
+        
+        </div>
+
+          <button class="introduction-btn catalog-btn btn">Voir le catalogue</button>
       </section>
+
+      
 
       <section class="products">
         <h2 class="products-title title">Nouveautés</h2>
-        <article class="products-item">
-          <h3 class="products-item__title">Espresso</h3>
-          <p class="products-item__text"></p>
-          <button class="products-item__button" type="button">Découvrir</button>
-        </article>
-        <article class="products-item">
-          <h3 class="products-item__title">Columbian</h3>
-          <p class="products-item__text"></p>
-          <button class="products-item__button" type="button">Découvrir</button>
-        </article>
-        <article class="products-item">
-          <h3 class="products-item__title">Ethiopian Yirgacheffe</h3>
-          <p class="products-item__text"></p>
-          <button class="products-item__button" type="button">Découvrir</button>
-        </article>
+        <div class="products-container">
+          <article class="products-item">
+            <h3 class="products-item__title">Espresso</h3>
+            <p class="products-item__text text">Café fort et concentré préparé en faisant passer de l'eau chaude à travers du café finement moulu.</p>
+            <button class="products-item__button btn" type="button">Découvrir</button>
+          </article>
+
+          <article class="products-item">
+            <h3 class="products-item__title">Columbian</h3>
+            <p class="products-item__text text">Café moyennement corsé avec une acidité vive et une saveur riche.</p>
+            <button class="products-item__button btn" type="button">Découvrir</button>
+          </article>
+
+          <article class="products-item">
+            <h3 class="products-item__title">Ethiopian Yirgacheffe</h3>
+            <p class="products-item__text text">Réputé pour son arôme floral, son acidité vive et ses notes de saveur citronnée.</p>
+            <button class="products-item__button btn" type="button">Découvrir</button>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="title">Notre savoir faire</h2>
+          <p class="text">Jean et Jacques Pepper, deux frères passionnés par l'univers du café, ont toujours rêvé de créer leur propre boutique de café haut de gamme. L'occasion de concrétiser ce rêve est arrivée lors d'un voyage inoubliable en Colombie, un pays célèbre pour ses plantations de café renommées dans le monde entier.</p>
+
+          <p class="text">Pendant leur séjour en Colombie, Jean et Jacques ont eu la chance de visiter une plantation de café pittoresque, nichée au cœur des montagnes verdoyantes. Ils ont été immédiatement captivés par l'atmosphère envoûtante et l'engagement des agriculteurs locaux à cultiver les meilleurs grains de café.</p>
+          
+          <p class="text">Au cours de cette visite, ils ont eu l'occasion de rencontrer des producteurs de café passionnés qui leur ont partagé leurs connaissances et leur amour pour le processus de culture, de récolte et de transformation du café. Jean et Jacques ont été fascinés par l'attention méticuleuse portée à chaque étape de la production, ainsi que par la diversité des saveurs et des arômes uniques que les différents terroirs colombiens offraient.</p>
+          
+          <p class="text">C'est à ce moment-là que l'étincelle de l'inspiration a embrasé leur esprit. Ils ont réalisé qu'ils voulaient partager cette passion pour le café de qualité avec le reste du monde. Leur vision était de créer un lieu où les amateurs de café pourraient découvrir et déguster des variétés de café exceptionnelles, tout en apprenant sur leur origine et leur processus de production.</p>
+          
+          <p class="text">De retour chez eux, Jean et Jacques ont mis en pratique leurs idées et ont commencé à planifier l'ouverture de leur boutique de café. Ils ont parcouru les fournisseurs, sélectionné avec soin les meilleurs grains de café issus de plantations durables et équitables, et ont créé un espace accueillant et chaleureux pour accueillir les amateurs de café.</p>
+          
+          <p class="text">Leur boutique de café était bien plus qu'un simple commerce. C'était un lieu où les clients pouvaient vivre une expérience sensorielle unique, en explorant les différentes origines, torréfactions et méthodes d'infusion. Jean et Jacques se sont également engagés à soutenir les communautés de producteurs de café en travaillant directement avec eux et en veillant à ce que chaque tasse de café servie contribue à un commerce équitable et durable.</p>
+          
+          <p class="text">Aujourd'hui, la boutique de café des frères Pepper est devenue une référence pour les amateurs de café de la région. Leur passion, leur connaissance approfondie et leur engagement envers la qualité se reflètent dans chaque tasse servie. Jean et Jacques sont fiers d'avoir transformé leur voyage en Colombie en une aventure entrepreneuriale qui a permis à tant de personnes de découvrir et d'apprécier le véritable plaisir du café.</p>
       </section>
 
     </main>
 
     <footer>
+      <p class="footer">© 2025 oCoffee. Tous droits réservés.</p>
 
     </footer>
   </body>

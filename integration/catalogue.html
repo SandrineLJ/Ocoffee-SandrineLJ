@@ -17,48 +17,66 @@
   <body>
     <header>
       <nav class="nav-container">
-        <img class="nav-logo" src="../docs/demande-client/00.assets/logo.svg" alt="logo Ocoffee">
-        <h1><a href="#">oCoffee </a></h1>
+        <div class="nav-logo">
+          <img class="nav-logo__pic" src="../docs/demande-client/00.assets/logo.svg" alt="logo Ocoffee">
+          <h1 class="nav-logo__title title"><a href="./index.html">oCoffee </a></h1>
+        </div>
 
-        <ul>
-          <li><a class="nav-item" href="./index.html">Accueil</a></li>
-          <li><a class="nav-item" href="./catalogue.html">Catalogue</a></li>
-          <li><a class="nav-item" href="#">Boutique</a></li>
+        <div class="nav-menu">
+          <ul class="nav-menu__list">
+            <li><a class="nav-menu__item" href="./index.html">Accueil</a></li>
+            <li><a class="nav-menu__item" href="./catalogue.html">Catalogue</a></li>
+            <li><a class="nav-menu__item" href="#">Boutique</a></li>
 
-        </ul>
+          </ul>
+        </div> 
 
       </nav>
 
     </header>
     <main>
-      <section>
-        <img src="../docs/demande-client/00.assets/coffees/958090105.png" alt="Illustration de grains de café sur du café moulu">
-        <button type="button">Catégories</button>
+      <section class="catalog">
+        <h2 class="catalog-title title">Notre catalogue</h2>
+     <!--   <img class="" src="../docs/demande-client/00.assets/coffees/958090105.png" alt="Illustration de grains de café sur du café moulu">
+      -->
+        <select name="categroy" id="">
+          <option value="">Catégorie</option>
+          <option value="">Corsé</option>
+          <option value="">Acide</option>
+          <option value="">Fruité</option>
+        </select>
       </section>
 
       <section class="products">
-        <article class="products-item">
-          <h3 class="products-item__title">Espresso</h3>
-          <p class="products-item__text"></p>
-          <button class="products-item__button" type="button">Découvrir</button>
-        </article>
-        <article class="products-item">
-          <h3 class="products-item__title">Columbian</h3>
-          <p class="products-item__text"></p>
-          <button class="products-item__button" type="button">Découvrir</button>
-        </article>
-        <article class="products-item">
-          <h3 class="products-item__title">Ethiopian Yirgacheffe</h3>
-          <p class="products-item__text"></p>
-          <button class="products-item__button" type="button">Découvrir</button>
-        </article>
-        <button type="button">Voir tous nos produits</button>
+        <div class="products-container">
+          <article class="products-item">
+            <h3 class="products-item__title">Espresso</h3>
+            <p class="products-item__text text">Café fort et concentré préparé en faisant passer de l'eau chaude à travers du café finement moulu.</p>
+            <button class="products-item__button btn" type="button">Découvrir</button>
+          </article>
+
+          <article class="products-item">
+            <h3 class="products-item__title">Columbian</h3>
+            <p class="products-item__text text">Café moyennement corsé avec une acidité vive et une saveur riche.</p>
+            <button class="products-item__button btn" type="button">Découvrir</button>
+          </article>
+
+          <article class="products-item">
+            <h3 class="products-item__title">Ethiopian Yirgacheffe</h3>
+            <p class="products-item__text text">Réputé pour son arôme floral, son acidité vive et ses notes de saveur citronnée.</p>
+            <button class="products-item__button btn" type="button">Découvrir</button>
+          </article>
+        </div>
+
+        <button class="catalog-btn btn">Tout voir</button>
       </section>
+
+      
 
     </main>
 
     <footer>
-
+      <p class="footer">© 2025 oCoffee. Tous droits réservés.</p>
     </footer>
   </body>
 </html>
