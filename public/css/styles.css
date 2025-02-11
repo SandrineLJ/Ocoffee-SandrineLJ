@@ -1,78 +1,97 @@
 body {
   font-family: "Josefin Sans", sans-serif;
+  font-size: 1.3rem;
   color: #3E1E03;
-  
+  background-color: #f2e9d5;
+  height: 100%; 
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  width: fit-content;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*======= Header =======*/
+
+header {
+  background-color: #99A66C;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+header img {
+  height: 3rem;
+  width: auto;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+}
+#logo {
+  font-size: 2rem;
+}
+
+/*======= Main =======*/
+
+main {
+  padding: 0 4rem;
+}
+
+section {
+  margin: 4rem 0;
 }
 
 .title {
   font-family: "Cormorant Garamond", sans-serif;
-  font-size: 2rem;
-  text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
 }
 
-.text {
-  position: relative;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-
+h1 {
+  font-size: 3rem;
 }
 
-/*.text:not(:last-of-type)::after {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 2px;
-  background-color: #99A66C;
-  margin: 10px auto;
-}
-*/
-
-.nav-container {
-  background-color: #99A66C;
-  display: flex; 
-  justify-content: space-between;
-  height: 10vh;
-  
-  
-  
+h2 {
+  font-size: 2.5rem;
 }
 
-.nav-container a {
-  text-decoration: none;
-  color: #3E1E03;
-}
-
-.nav-logo {
-  display: flex;
-  width: auto;
-}
-
-.nav-logo__pic{
-  width: 3rem;
-}
-.nav-logo__title {
-  padding-top: 1.5rem;
-  font-size: 1.5rem;
-}
-
-.nav-menu {
-  padding: 1rem;
-}
-main {
-  background-color: #F5F1E8;
-  padding: 1.5rem;
-}
-
-.introduction {
+.about {
   display: flex;
   flex-direction: column;
+  
+}
+
+.about div {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
   align-items: center;
 }
+.about p {
+  text-align: justify;
+}
 
-.introduction-block {
-  display: flex;
-  flex-direction: column;
+.about img {
+  border-radius: 0.7rem;
+  object-fit: cover;
+  width: 50%;
+  max-width: 650px;
+}
+
+@media screen and (max-width: 1280px) {
+  .about img {
+    display: none;
+  }
 }
 
 .products {
@@ -83,26 +102,38 @@ main {
 
 .products-item {
   border: #3E1E03 solid 1px;
-  font-size: 12px;
-  padding: 1rem;
-  margin: 1rem;
-  width: 50%;
-  text-align: center;  
-  align-self: center;
+  border-radius: 0.5rem;  
 }
 
-.products-container {
+.products ul {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin: 2.5rem 0;
+  padding-left: 0;
+  }
+
+.products li {
+  flex-grow: 1;
+  flex-basis: 12rem;
+}
+
+.products-item div {
+  padding: 0.4rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
 }
 
-.products-item__title {
-  font-size: 14px;
-  font-weight: bold;
+.products-item img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
+
+/*======= Button =======*/
 
 .btn {
-  font-size: 11px;
   padding: 8px;
   background-color: #99A66C;
   color: #F5F1E8;
@@ -112,6 +143,7 @@ main {
   box-shadow: #737c52 0px 3px 0px 0px;
   cursor: pointer;
 }
+
 .btn:hover {
   box-shadow: #737c52 0px 1px 0px 0px;
 }
@@ -123,13 +155,58 @@ main {
   transition: 200ms;
 }
 
-button.btn.catalog-btn {
-  max-width: 100px;
+.btn.catalog-btn {
+  
   background-color: #f6dbb9;
   color: #3E1E03;
   box-shadow: #aa967e 0px 3px 0px 0px;
 
 }
+
+/*======= Footer =======*/
+
+footer {
+  background-color: #3E1E03;
+  color: #f6dbb9;
+  text-align: center;
+  padding: 2vh;
+}
+
+/*======= Responsive =======*/
+
+@media screen and (min-width: 720px) {
+  section {
+    margin: 4rem 0;
+  }  
+}
+
+@media screen and (min-width: 1280px) {
+  main {
+    padding: 0 8rem;
+  }
+  .about {
+    flex-direction: row;
+  }
+
+  .about div {    
+    padding-right: 3rem;
+  }
+   
+}
+
+/*
+
+TODO menu burger
+.navbar{
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  right: -250px;
+  background-color: inherit;
+  padding-top: 1rem;
+  transition: right 0.5s ease;
+}
+
 
 .catalog-title {
   background-image: url("../../demande-client/00.assets/coffees/753915650.png");
@@ -137,39 +214,11 @@ button.btn.catalog-btn {
   padding: 5vh;
   color: #f6dbb9;
   
-}
-img {
-  max-width: 100%;
-  height: auto;
+
+  
 }
 
 
-.footer {
-  background-color: #3E1E03;
-  color: #f6dbb9;
-  font-size: 10px;
-  text-align: center;
-  padding: 2vh;
-}
 
 
-@media screen and (min-width: 900px) {
-  .title {
-    font-size: 3rem;
-    font-weight: bold;
-  }
 
-  .introduction-block {
-    flex-direction: row-reverse;
-  }
-  .introduction-title {
-    text-align: left;
-  }
-  .products-container{
-    flex-direction: row;
-  }
-
-  .catalog-title {
-    padding: 15vh;
-  }
-}

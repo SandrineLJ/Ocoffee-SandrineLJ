@@ -1,39 +1,53 @@
 <%- include('./partials/header.ejs') %>
 
     
-      <section class="introduction">
-        <h1 class="introduction-title title">Votre spécialiste Haucloquois du café</h1>
+      <section class="about">
+        <div>
+          <h1 class="title">Votre spécialiste Haucloquois du café</h1>
 
-          <p class="introduction-text text">oCoffee est un détaillant de café et de produits associés à la consommation du café basé dans la ville de Hauts-de-Cloques. Nous importons nos produits directement des producteurs, et nous les sélectionnons selon des critères exigeants de qualité. oCoffee est reconnu à l’échelle départementale.</p>
-            
-          
+            <p>oCoffee est un détaillant de café et de produits associés à la consommation du café basé dans la ville de Hauts-de-Cloques. Nous importons nos produits directement des producteurs, et nous les sélectionnons selon des critères exigeants de qualité. oCoffee est reconnu à l’échelle départementale.</p>
+            <a class="about-btn catalog-btn btn" href="">Voir notre catalogue</a>
+        </div>
 
-          <a class="introduction-btn catalog-btn btn">Voir le catalogue</a>
+          <img src="/images/about.jpg" alt="">
       </section>
 
       
 
       <section class="products">
-        <h2 class="products-title title">Nouveautés</h2>
-        <div class="products-container">
-          <article class="products-item">
-            <h3 class="products-item__title">Espresso</h3>
-            <p class="products-item__text text">Café fort et concentré préparé en faisant passer de l'eau chaude à travers du café finement moulu.</p>
-            <a class="products-item__button btn" href="#">Découvrir</a>
-          </article>
+        <h2 class="title">Nouveautés</h2>
 
-          <article class="products-item">
-            <h3 class="products-item__title">Columbian</h3>
-            <p class="products-item__text text">Café moyennement corsé avec une acidité vive et une saveur riche.</p>
-            <a class="products-item__button btn">Découvrir</a>
-          </article>
+        <ul class="products-container">
+          <li>
+            <article class="products-item">
+              <img src="/images/100955890.png" alt="Selection de nos meilleurs cafés oCoffee">
+              <div>
+                <h3>Espresso</h3>
+                <a class="products-item__button btn" href="#">Découvrir</a>
+              </div>
+            </article>
+          </li>
 
-          <article class="products-item">
-            <h3 class="products-item__title">Ethiopian Yirgacheffe</h3>
-            <p class="products-item__text text">Réputé pour son arôme floral, son acidité vive et ses notes de saveur citronnée.</p>
-            <a class="products-item__button btn">Découvrir</a>
-          </article>
-        </div>
+            <li>
+              <article class="products-item">
+              <img src="/images/100955890.png" alt="Selection de nos meilleurs cafés oCoffee">
+              <div>
+                  <h3>Espresso</h3>
+                  <a class="products-item__button btn" href="#">Découvrir</a>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="products-item">
+                <img src="/images/100955890.png" alt="Selection de nos meilleurs cafés oCoffee">
+                <div>
+                  <h3>Espresso</h3>
+                  <a class="products-item__button btn" href="#">Découvrir</a>
+                </div>
+              </article>
+            </li>
+        </ul>
       </section>
 
 <%- include('./partials/footer.ejs') %>    
