@@ -4,7 +4,7 @@ CREATE TABLE "coffee" (
   "id" SERIAL PRIMARY KEY,
   "name" TEXT,
   "description" TEXT,
-  "price" REAL NOT NULL,
+  "price" NUMERIC(10,2),
   "category" TEXT,
   "origin" TEXT,
   "reference" INTEGER,

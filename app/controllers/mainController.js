@@ -11,7 +11,7 @@ const mainController = {
 
     } catch (error) {
       console.error(error);
-      res.status(500).send("une erreur s'est produite");
+      res.status(500).rende("500");
     }
   }
 
