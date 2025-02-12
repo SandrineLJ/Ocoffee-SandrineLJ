@@ -1,12 +1,47 @@
-.catalog .title {
+.catalog-title .title {
   background-image: url("../images/753915650.png");
   background-size: cover;
   background-position: center;
   padding: 5vh;
   color: #f6dbb9;
   border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);  
 }
 
-.products-item p {
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 3rem;
+  padding: 0;
+  margin: 10rem 0 3rem;
+}
+
+.catalog-item {
+  
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);  
+}
+
+.catalog-item div {
+  padding: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 10rem;
+}
+
+.catalog-item p {
   font-size: 1rem;
+}
+
+.catalog-item img {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.catalogBtn {
+  object-position: center;
 }

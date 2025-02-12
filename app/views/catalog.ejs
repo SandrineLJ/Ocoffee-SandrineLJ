@@ -1,6 +1,6 @@
 <%- include('./partials/header') %>
 
-      <section class="catalog">
+      <section class="catalog-title">
         <h1 class="title">Notre catalogue</h2>
      <!--   
         <select name="categroy" id="">
@@ -13,13 +13,13 @@
       -->
       </section>
 
-      <section class="products">
-        <ul class="products-container">
+      <section class="catalog-items">
+        <ul class="catalog-list auto-grid">
 
           <% products.forEach(product => { %>
            
             <li>
-              <article class="products-item">
+              <article class="catalog-item">
                 <img src="/images/coffees/<%= product.reference %>.png" alt="Selection de nos meilleurs cafés oCoffee">
                 <div>
                   <h3><%= product.name %></h3>
@@ -29,7 +29,7 @@
                   <% } else { %>
                     <p>Actuellement indisponible</p>
                   <% } %>                  
-                  <a class="products-item__button btn" href="/article/<%= product.id %>">Voir le détail</a>
+                  <a class="btn" href="/article/<%= product.id %>">Voir le détail</a>
                 </div>
               </article>
             </li>
@@ -38,7 +38,7 @@
           
         </ul>
 
-        <a class="catalog-btn btn">Tout voir</a>
+        <a class="catalog-btn btn catalogBtn">Tout voir</a>
       </section>
      
 

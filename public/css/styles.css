@@ -93,6 +93,7 @@ h2 {
   object-fit: cover;
   width: 50%;
   max-width: 650px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);  
 }
 
 @media screen and (max-width: 1280px) {
@@ -108,7 +109,7 @@ h2 {
 }
 
 .products-item {
-  border: #3E1E03 solid 1px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);  
   border-radius: 0.5rem;  
 }
 
@@ -171,9 +172,9 @@ h2 {
 
 .btn.catalog-btn {
   
-  background-color: #f6dbb9;
-  color: #3E1E03;
-  box-shadow: #aa967e 0px 3px 0px 0px;
+  background-color: #3E1E03;
+  color: #f6dbb9;
+  box-shadow: #2d1502 0px 3px 0px 0px;
 
 }
 
@@ -190,6 +191,7 @@ h2 {
   height: 300px;
   object-fit: cover;
   object-position: center;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);  
 }
 
 #productFirstSection {
