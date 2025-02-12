@@ -1,7 +1,13 @@
+html, body {
+  height: 100%;
+  margin: 0 auto;
+}
 body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.3rem;
   color: #3E1E03;
+  display: flex;
+  flex-direction: column;
   background-color: #f2e9d5;
   height: 100%; 
 }
@@ -45,7 +51,8 @@ header a {
 
 main {
   padding: 0 4rem;
-}
+  flex: 1;
+ }
 
 section {
   margin: 4rem 0;
@@ -58,7 +65,7 @@ section {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 h2 {
@@ -137,7 +144,9 @@ h2 {
   padding: 8px;
   background-color: #99A66C;
   color: #F5F1E8;
+  text-align: center;
   border: 0;
+  min-width: 120px;
   border-radius: 10px;
   transition: all 0.3s ease;
   box-shadow: #737c52 0px 3px 0px 0px;
@@ -161,6 +170,41 @@ h2 {
   color: #3E1E03;
   box-shadow: #aa967e 0px 3px 0px 0px;
 
+}
+
+/*======= Product =======*/
+
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
+.product img {
+  border-radius: 0.7rem;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#productFirstSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#productSecondSection {
+display: flex;
+flex-direction: column;
+align-items: self-start;
+}
+
+/*======= Error =======*/
+
+.errorLayout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*======= Footer =======*/
@@ -208,15 +252,7 @@ TODO menu burger
 }
 
 
-.catalog-title {
-  background-image: url("../../demande-client/00.assets/coffees/753915650.png");
-  background-size: cover;
-  padding: 5vh;
-  color: #f6dbb9;
-  
 
-  
-}
 
 
 

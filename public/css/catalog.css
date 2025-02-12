@@ -1,0 +1,8 @@
+.catalog .title {
+  background-image: url("../images/753915650.png");
+  background-size: cover;
+  background-position: center;
+  padding: 5vh;
+  color: #f6dbb9;
+  border-radius: 10px;
+}
