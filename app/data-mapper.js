@@ -14,6 +14,14 @@ const dataMapper = {
     const latestProducts = result.rows;
 
     return latestProducts;
+  },
+
+  async getOneProduct(productId) {
+    const result = await client.query(`SELECT * FROM "coffee" WHERE "id" = $1`, [productId]);
+
+    const product = result.rows[0];
+
+    return product;
   }
 
 }

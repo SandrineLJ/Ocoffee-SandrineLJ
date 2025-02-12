@@ -24,8 +24,12 @@
                 <div>
                   <h3><%= product.name %></h3>
                   <p>Origine <%= product.origin %></p>
-                  <p><%= product.price %> €/kg</p>
-                  <a class="products-item__button btn" href="/article/id">Voir le détail</a>
+                  <% if (product.available === true) { %>
+                    <p><%= product.price %> €/kg</p>
+                  <% } else { %>
+                    <p>Actuellement indisponible</p>
+                  <% } %>                  
+                  <a class="products-item__button btn" href="/article/<%= product.id %>">Voir le détail</a>
                 </div>
               </article>
             </li>
