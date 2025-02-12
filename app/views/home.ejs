@@ -18,36 +18,22 @@
         <h2 class="title">Nouveautés</h2>
 
         <ul class="products-container">
-          <li>
-            <article class="products-item">
-              <img src="/images/100955890.png" alt="Selection de nos meilleurs cafés oCoffee">
-              <div>
-                <h3>Espresso</h3>
-                <a class="products-item__button btn" href="#">Découvrir</a>
-              </div>
-            </article>
-          </li>
 
+          <% products.forEach(product => { %>
+           
+          
             <li>
               <article class="products-item">
-              <img src="/images/100955890.png" alt="Selection de nos meilleurs cafés oCoffee">
-              <div>
-                  <h3>Espresso</h3>
-                  <a class="products-item__button btn" href="#">Découvrir</a>
-                </div>
-              </article>
-            </li>
-
-            <li>
-              <article class="products-item">
-                <img src="/images/100955890.png" alt="Selection de nos meilleurs cafés oCoffee">
+                <img src="/images/coffees/<%= product.reference %>.png" alt="Selection de nos meilleurs cafés oCoffee">
                 <div>
-                  <h3>Espresso</h3>
-                  <a class="products-item__button btn" href="#">Découvrir</a>
+                  <h3><%= product.name %></h3>
+                  <a class="products-item__button btn" href="/article/<%= product.id %>">Découvrir</a>
                 </div>
               </article>
             </li>
-        </ul>
+
+          <% }) %>
+            
       </section>
 
 <%- include('./partials/footer.ejs') %>    
