@@ -14,11 +14,12 @@
       </section>
 
       <section class="catalog-items">
-        <ul class="catalog-list auto-grid">
+        <ul class="catalog-list auto-grid only-display-3-articles">
 
           <% products.forEach(product => { %>
            
             <li>
+
               <article class="catalog-item">
                 <img src="/images/coffees/<%= product.reference %>.png" alt="Selection de nos meilleurs cafés oCoffee">
                 <div>
@@ -38,7 +39,7 @@
           
         </ul>
 
-        <a class="catalog-btn btn catalogBtn">Tout voir</a>
+        <button class="catalog-btn btn catalogBtn">Voir tous nos produits</button>
       </section>
      
 

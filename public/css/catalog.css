@@ -16,6 +16,9 @@
   margin: 10rem 0 3rem;
 }
 
+.catalog-items .only-display-3-articles li:nth-child(n+4) {
+  display: none;
+}
 .catalog-item {
   
   border-radius: 0.5rem;
@@ -43,5 +46,5 @@
 }
 
 .catalogBtn {
-  object-position: center;
+  align-content: center;
 }
