@@ -6,3 +6,7 @@
   color: #f6dbb9;
   border-radius: 10px;
 }
+
+.products-item p {
+  font-size: 1rem;
+}
