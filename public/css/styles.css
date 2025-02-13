@@ -22,34 +22,10 @@ ul {
   list-style-type: none;
 }
 
-/*======= Header =======*/
-
-header {
-  background-color: #99A66C;
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-header img {
-  height: 3rem;
-  width: auto;
-}
-
-header a {
-  display: flex;
-  align-items: center;
-}
-#logo {
-  font-size: 2rem;
-}
-
 /*======= Main =======*/
 
 main {
+  margin-top: 15vh;
   padding: 0 4rem;
   flex: 1;
  }
@@ -232,6 +208,7 @@ footer {
 }
 
 @media screen and (min-width: 1280px) {
+  
   main {
     padding: 0 8rem;
   }
@@ -243,19 +220,6 @@ footer {
     padding-right: 3rem;
   }
    
-}
-
-/*
-
-TODO menu burger
-.navbar{
-  height: 100%;
-  z-index: 1;
-  top: 0;
-  right: -250px;
-  background-color: inherit;
-  padding-top: 1rem;
-  transition: right 0.5s ease;
 }
 
 

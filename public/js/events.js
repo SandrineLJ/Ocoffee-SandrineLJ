@@ -1,6 +1,6 @@
 const eventHandlers = {
 
-  showAllProducts() {
+  handleProductsList() {
     const button = document.querySelector('.catalogBtn');
     const catalogList = document.querySelector('.catalog-list');
 
@@ -14,7 +14,16 @@ const eventHandlers = {
       }
     });
     
+  },
+  initMenuBurger() {
+    const menuButton = document.getElementById("menu-button");
+    const navbar = document.querySelector('.navbar');
+
+    menuButton.addEventListener('click', () => {
+      navbar.classList.toggle('expanded');
+    });
   }
 }
 
-eventHandlers.showAllProducts();
+eventHandlers.handleProductsList();
+eventHandlers.initMenuBurger();
