@@ -1,28 +1,29 @@
 <%- include('./partials/header') %>
 
-    <div class="product">
-      <section id="productFirstSection">
-        <h1 class="title"><%= product.name %></h1>
-        <img src="/images/coffees/<%= product.reference %>.png" alt="Illustration de grains de café">
-      </section>
 
-      <section id="productSecondSection">
-        <h2 class="title">Origine : <%= product.origin %></h2>
-          <p><%= product.description %></p>
-          <p>Arôme : <%= product.category %></p>
+<div class="product">
+  <section id="productFirstSection">
+    <h1 class="title"><%= product.name %></h1>
+    <img src="/images/coffees/<%= product.reference %>.png" alt="Illustration de grains de café">
+  </section>
 
-          <% if (product.available === true) { %>
-            <p>Prix au kilo : <%= product.price %> €</p>
-          <% } else { %>
-            <p>Actuellement indisponible</p>
-          <% } %>
-          
-          
+  <section id="productSecondSection">
+    <h2 class="title">Origine : <%= product.origin %></h2>
+      <p><%= product.description %></p>
+      <p>Arôme : <%= product.category %></p>
 
-          <a href="/catalog" class="btn">Retour au catalogue</a>
-      </section>
+      <% if (product.available) { %>
+        <p>Prix au kilo : <%= product.price %> €</p>
+      <% } else { %>
+        <p>Actuellement indisponible</p>
+      <% } %>
+      
+      
 
-    </div>
+      <a href="/catalog" class="btn">Retour au catalogue</a>
+  </section>
+
+</div>
 
 
 <%- include('./partials/footer') %>

@@ -5,6 +5,7 @@ import catalogController from "./controllers/catalogController.js";
 const router = Router();
 
 router.get("/", mainController.renderHomePage);
+router.get("/about", mainController.renderAboutPage);
 router.get("/catalog", catalogController.renderCatalogPage);
 router.get("/article/:id", catalogController.renderProductPage); 
 

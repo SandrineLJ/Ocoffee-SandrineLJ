@@ -23,7 +23,7 @@ const catalogController = {
       
       const product = await dataMapper.getOneProduct(productId);
 
-      if (! product) {
+      if (!product) {
         res.status(404).render('404');
         return;
       }

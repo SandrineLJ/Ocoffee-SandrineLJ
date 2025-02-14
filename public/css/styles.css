@@ -25,7 +25,7 @@ ul {
 /*======= Main =======*/
 
 main {
-  margin-top: 15vh;
+  
   padding: 0 4rem;
   flex: 1;
  }
@@ -48,23 +48,23 @@ h2 {
   font-size: 2.5rem;
 }
 
-.about {
+.presentation {
   display: flex;
   flex-direction: column;
   
 }
 
-.about div {
+.presentation div {
   display: flex;
   flex-direction: column;
   gap: 5rem;
   align-items: center;
 }
-.about p {
+.presentation p {
   text-align: justify;
 }
 
-.about img {
+.presentation img {
   border-radius: 0.7rem;
   object-fit: cover;
   width: 50%;
@@ -73,7 +73,7 @@ h2 {
 }
 
 @media screen and (max-width: 1280px) {
-  .about img {
+  .presentation img {
     display: none;
   }
 }
@@ -190,6 +190,23 @@ align-items: self-start;
   align-items: center;
 }
 
+/*======= About page =======*/
+
+.about p {
+  text-align: justify;
+  margin-top: 2rem;
+}
+
+.about p:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 10rem;
+  height: 2px;
+  background-color: #99A66C;
+  margin: 2rem auto;
+}
+
+
 /*======= Footer =======*/
 
 footer {
@@ -210,13 +227,14 @@ footer {
 @media screen and (min-width: 1280px) {
   
   main {
+    margin-top: 15vh;
     padding: 0 8rem;
   }
-  .about {
+  .presentation {
     flex-direction: row;
   }
 
-  .about div {    
+  .presentation div {    
     padding-right: 3rem;
   }
    

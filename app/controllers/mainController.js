@@ -13,6 +13,10 @@ const mainController = {
       console.error(error);
       res.status(500).rende("500");
     }
+  },
+
+  renderAboutPage(req, res) {
+    res.render("about");
   }
 
 }

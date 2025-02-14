@@ -17,24 +17,21 @@
         <ul class="catalog-list auto-grid only-display-3-articles">
 
           <% products.forEach(product => { %>
-           
             <li>
-
               <article class="catalog-item">
-                <img src="/images/coffees/<%= product.reference %>.png" alt="Selection de nos meilleurs cafés oCoffee">
-                <div>
-                  <h3><%= product.name %></h3>
-                  <p>Origine <%= product.origin %></p>
-                  <% if (product.available === true) { %>
-                    <p><%= product.price %> €/kg</p>
-                  <% } else { %>
-                    <p>Actuellement indisponible</p>
-                  <% } %>                  
-                  <a class="btn" href="/article/<%= product.id %>">Voir le détail</a>
-                </div>
+                  <img src="/images/coffees/<%= product.reference %>.png" alt="Selection de nos meilleurs cafés oCoffee">
+                  <div>
+                      <h3><%= product.name %></h3>
+                      <p>Origine <%= product.origin %></p>
+                      <% if (product.available) { %>
+                      <p><%= product.price %> €/kg</p>
+                      <% } else { %>
+                      <p>Actuellement indisponible</p>
+                      <% } %>                  
+                      <a class="btn" href="/article/<%= product.id %>">Voir le détail</a>
+                  </div>
               </article>
-            </li>
-
+          </li>
           <% }) %>
           
         </ul>

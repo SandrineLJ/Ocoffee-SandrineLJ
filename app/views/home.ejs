@@ -1,7 +1,7 @@
 <%- include('./partials/header.ejs') %>
 
     
-      <section class="about">
+      <section class="presentation">
         <div>
           <h1 class="title">Votre spécialiste Haucloquois du café</h1>
 
@@ -9,31 +9,33 @@
             <a class="about-btn catalog-btn btn" href="/catalog">Voir notre catalogue</a>
         </div>
 
-          <img src="/images/about.jpg" alt="">
+          <img src="/images/about.jpg" alt="Illustration café">
       </section>
 
       
+      
+        <section class="products">
+          <h2 class="title">Nouveautés</h2>
 
-      <section class="products">
-        <h2 class="title">Nouveautés</h2>
+          <ul class="products-container">
 
-        <ul class="products-container">
-
-          <% products.forEach(product => { %>
-           
-          
-            <li>
-              <article class="products-item">
-                <img src="/images/coffees/<%= product.reference %>.png" alt="Selection de nos meilleurs cafés oCoffee">
-                <div>
-                  <h3><%= product.name %></h3>
-                  <a class="products-item__button btn" href="/article/<%= product.id %>">Découvrir</a>
-                </div>
-              </article>
-            </li>
-
-          <% }) %>
+            <% products.forEach(product => { %>
             
-      </section>
+            
+              <li>
+                <article class="products-item">
+                  <img src="/images/coffees/<%= product.reference %>.png" alt="Selection de nos meilleurs cafés oCoffee">
+                  <div>
+                    <h3><%= product.name %></h3>
+                    <a class="products-item__button btn" href="/article/<%= product.id %>">Découvrir</a>
+                  </div>
+                </article>
+              </li>
+
+            <% }) %>
+          
+          </ul>
+              
+        </section>
 
 <%- include('./partials/footer.ejs') %>    
