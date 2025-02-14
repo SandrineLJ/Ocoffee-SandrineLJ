@@ -16,11 +16,17 @@
   margin: 10rem 0 3rem;
 }
 
+.catalog-items {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .catalog-items .only-display-3-articles li:nth-child(n+4) {
   display: none;
 }
+
 .catalog-item {
-  
   border-radius: 0.5rem;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);  
 }
@@ -46,5 +52,6 @@
 }
 
 .catalogBtn {
-  align-content: center;
+ width: fit-content;
+ align-self: center;
 }
